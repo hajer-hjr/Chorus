@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="main_circle_width">230</integer>
+    <integer name="main_circle_height">230</integer>
+    <integer name="small_circle_width">100</integer>
+    <integer name="small_circle_height">100</integer>
+</resources>

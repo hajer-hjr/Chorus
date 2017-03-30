@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/profil"
+            android:title="@string/nav_home" />
+  <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/profil2"
+            android:title="@string/nav_profil" />
+        <item
+            android:id="@+id/nav_serach"
+            android:icon="@drawable/search_icon"
+            android:title="@string/nav_serach" />
+     <!--   <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/map_gris"
+            android:title="@string/nav_movies" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/mybook_gris"
+            android:title="@string/nav_notifications" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/map_gris"
+            android:title="@string/nav_settings" />-->
+    </group>
+
+    <item android:title="Autres">
+        <menu>
+            <item
+                android:id="@+id/nav_params"
+                android:icon="@drawable/params_icon"
+                android:title="@string/action_settings" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/nav_logout" />
+            <!--<item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/privacy_policy" />-->
+        </menu>
+    </item>
+
+</menu>

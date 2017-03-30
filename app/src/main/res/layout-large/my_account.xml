@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:isScrollContainer="true"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/fl1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/iv1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:orientation="vertical"
+            android:id="@+id/sexeLayout">
+
+        <chorus.chorus.com.chorus.CircularImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:id="@+id/logo"
+            android:paddingTop="90dp"
+            android:paddingLeft="20dp"
+            android:layout_width="320dp"
+            android:layout_height="320dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll1">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_marginLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_gravity="left" />
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="27dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:fontFamily="cursive" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/ll2">
+
+                <TextView
+                    android:id="@+id/profession"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="left">
+                </TextView>
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/action_bar"
+                    android:layout_gravity="left"
+                    />
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rl2"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageButton
+                style="@style/SJB_myaccountB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/modif_verset"
+                android:clickable="true"
+                android:id="@+id/EditButton"
+                />
+
+            <TextView
+                android:id="@+id/likes"
+                android:gravity="right"
+                android:layout_marginRight="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="20dp"
+                android:text="45"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                style="@style/SJB_myaccountB"
+                android:layout_height="wrap_content"
+                android:src="@drawable/like_button"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/LikeButton"
+                android:layout_toLeftOf="@+id/likes"
+                android:layout_toStartOf="@+id/likes"
+                android:layout_marginRight="13dp" />
+        </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/verset_area"
+        android:layout_below="@+id/l1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="40dp"
+            android:layout_height="wrap_content">
+
+            <chorus.chorus.com.chorus.EmojiconEditText
+                app:emojiconSize="28sp"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:outlineProvider="bounds"
+                android:layout_alignParentRight="true"
+                android:layout_width="500dp"
+                android:inputType="textMultiLine|textLongMessage|textImeMultiLine"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:id="@+id/verset"
+                android:layout_gravity="center_horizontal"
+                android:imeOptions="actionSend"
+                android:textSize="25dp"
+                android:background="@drawable/edittext_custom"
+                android:editable="false"
+                android:focusable="false"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/smiley"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/verset"
+                android:layout_alignRight="@+id/verset"
+                android:background="@android:color/transparent"
+                android:id="@+id/emojicon_edit_text"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/rl3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/bottom_bar">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/world"
+            style="@style/SJB_myaccountB"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:id="@+id/home_button"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/book"
+            android:id="@+id/bookButt"
+            android:paddingLeft="60dp"
+            style="@style/SJB_myaccountB"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageButton
+            style="@style/SJB_myaccountB"
+            android:src="@drawable/map_gris"
+            android:clickable="true"
+            android:paddingLeft="60dp"
+            android:id="@+id/geoButt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:onClick="geo_search"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageButton
+            style="@style/SJB_myaccountB"
+            android:src="@drawable/discus"
+            android:clickable="false"
+            android:id="@+id/discusButt"
+            android:paddingLeft="60dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            />
+
+
+        <ImageButton
+            style="@style/SJB_myaccountB"
+            android:src="@drawable/contact_gris"
+            android:clickable="false"
+            android:paddingLeft="60dp"
+            android:id="@+id/contactButt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            />
+
+
+
+</LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>

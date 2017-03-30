@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "chorus.chorus.com.chorus"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+}
+
+
+repositories {
+    maven { url 'http://clojars.org/repo' }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile files('C:/Users/pc/AndroidStudioProjects/chorus/libs/android-smart-image-view-1.0.0.jar')
+    compile files('C:/Users/pc/AndroidStudioProjects/chorus/libs/apache-mime4j-0.6.jar')
+    compile files('C:/Users/pc/AndroidStudioProjects/chorus/libs/httpmime-4.0.1.jar')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.pusher:pusher-java-client:1.0.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.szugyi:Android-CircleMenu:2.0.0'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    //compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.yahoo.mobile.client.android.util.rangeseekbar:rangeseekbar-library:0.1.0'
+    compile 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.0'
+}

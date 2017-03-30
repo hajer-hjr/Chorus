@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A000000"
+    android:orientation="vertical">
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/grid_item_image"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="180dp">
+    </com.loopj.android.image.SmartImageView>
+  <ImageView
+        android:layout_height="20dp"
+         android:layout_centerInParent="true"
+      android:visibility="gone"
+        android:src="@drawable/icon_check"
+        android:id="@+id/ischecked"
+        android:layout_width="20dp"/>
+    <TextView
+        android:id="@+id/grid_item_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignBottom="@+id/grid_item_image"
+        android:textStyle="bold"
+       android:paddingLeft="10dp"
+        android:background="#99000000"
+        android:textColor="#ffffff"
+        android:textSize="15dp" >
+    </TextView>
+</RelativeLayout>

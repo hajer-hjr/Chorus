@@ -1,0 +1,63 @@
+# view res/layout/abs__screen_action_bar.xml #generated:47
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:27
+# view res/layout/abs__screen_simple.xml #generated:34
+# view res/layout/abs__screen_simple_overlay_action_mode.xml #generated:27
+# view xlarge-v4/res/layout-xlarge-v4/abs__screen_action_bar.xml #generated:47
+# view xlarge-v4/res/layout-xlarge-v4/abs__screen_action_bar_overlay.xml #generated:25
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout { <init>(...); }
+
+# view large-v4/res/layout-large-v4/abs__action_mode_close_item.xml #generated:16
+# view res/layout/abs__action_mode_close_item.xml #generated:16
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:16
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abs__action_menu_layout.xml #generated:16
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view res/layout/abs__popup_menu_item_layout.xml #generated:16
+-keep class com.actionbarsherlock.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:27
+# view res/layout/abs__screen_action_bar.xml #generated:55
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:32
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:61
+# view xlarge-v4/res/layout-xlarge-v4/abs__screen_action_bar.xml #generated:27
+# view xlarge-v4/res/layout-xlarge-v4/abs__screen_action_bar_overlay.xml #generated:30
+-keep class com.actionbarsherlock.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abs__action_mode_bar.xml #generated:18
+# view res/layout/abs__screen_action_bar.xml #generated:39
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:46
+# view xlarge-v4/res/layout-xlarge-v4/abs__screen_action_bar.xml #generated:39
+# view xlarge-v4/res/layout-xlarge-v4/abs__screen_action_bar_overlay.xml #generated:43
+-keep class com.actionbarsherlock.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:33
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:40
+# view xlarge-v4/res/layout-xlarge-v4/abs__screen_action_bar.xml #generated:33
+# view xlarge-v4/res/layout-xlarge-v4/abs__screen_action_bar_overlay.xml #generated:37
+-keep class com.actionbarsherlock.internal.widget.ActionBarView { <init>(...); }
+
+# view res/layout/abs__action_bar_home.xml #generated:16
+-keep class com.actionbarsherlock.internal.widget.ActionBarView$HomeView { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:42
+-keep class com.actionbarsherlock.internal.widget.CapitalizingButton { <init>(...); }
+
+# view res/layout/abs__activity_chooser_view.xml #generated:18
+-keep class com.actionbarsherlock.internal.widget.IcsLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_bar_tab.xml #generated:3
+-keep class com.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView { <init>(...); }
+
+# view res/layout/abs__action_bar_tab_bar_view.xml #generated:3
+-keep class com.actionbarsherlock.internal.widget.TabsLinearLayout { <init>(...); }
+
+# view res/layout/abs__search_view.xml #generated:78
+-keep class com.actionbarsherlock.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view res/layout/slidingmenumain.xml #generated:2
+-keep class com.jeremyfeinstein.slidingmenu.lib.SlidingMenu { <init>(...); }
+

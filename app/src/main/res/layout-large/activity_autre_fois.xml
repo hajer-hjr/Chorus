@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:orientation="vertical"
+    style="@style/SJB_CustomLayout"
+    android:background="#ffffff">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#319b87"
+            android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <chorus.chorus.com.chorus.CircularImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/imageUser"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:paddingBottom="40dp"
+        android:gravity="center_vertical"
+        android:paddingTop="40dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/chorusText"
+        android:layout_height="wrap_content"
+        android:text="une autre fois!"
+        android:textColor="#f10714"
+
+        android:layout_gravity="center_horizontal"
+        android:textSize="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="serif" />
+    <chorus.chorus.com.chorus.CircularImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageMembre"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:paddingBottom="30dp"
+        />
+    <ImageButton
+        android:clickable="true"
+        style="@style/SJB_myaccountButton"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft= "20dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/goback"
+        android:layout_gravity="bottom"
+        android:src="@drawable/back_30_rose"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

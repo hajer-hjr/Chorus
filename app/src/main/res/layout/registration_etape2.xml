@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:padding="0dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#319b87"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/grid_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignLeft="@+id/complete"
+            android:layout_alignBottom="@+id/complete"
+            android:paddingLeft="10dp"
+            android:text="@string/prompt_categ_label"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+        <Button
+            android:id="@+id/complete"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/check_16"
+            style="@style/SJB_completeButton"
+            android:background="@drawable/button_radius"
+            android:drawablePadding="5dp"
+            android:padding="3dp"
+            android:layout_alignParentRight="true"
+            android:text="Terminé"
+            android:onClick="complete"
+ />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3px">
+    </View>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:columnWidth="180dp"
+    android:numColumns="2"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    />
+</RelativeLayout>
+</LinearLayout>

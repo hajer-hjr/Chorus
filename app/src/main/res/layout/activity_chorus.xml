@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:orientation="vertical"
+    style="@style/SJB_CustomLayout"
+    android:background="@color/colorvertclair"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#319b87"
+            android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <chorus.chorus.com.chorus.CircularImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/imageUser"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/choruss"/>
+    <!--
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        >
+    <TextView
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/chorusText"
+        android:layout_height="wrap_content"
+        android:text="CHORU"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_gravity="bottom"
+
+        android:textColor="#ffffff"
+        android:textSize="36dp"
+        android:textAllCaps="false" />
+        <TextView
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/choruss"
+            android:layout_height="wrap_content"
+            android:text="S "
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="34dp"
+            android:layout_gravity="bottom"
+            android:textAllCaps="false" />
+        <TextView
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/ext"
+            android:layout_height="wrap_content"
+            android:text="!"
+            android:fontFamily="jack frost"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+
+            android:textColor="#ffffff"
+            android:textSize="36dp"
+            android:textAllCaps="false" />
+    </LinearLayout> -->
+    <chorus.chorus.com.chorus.CircularImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageMembre"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:paddingBottom="15dp"
+        />
+
+    <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:clickable="true"
+                    style="@style/SJB_myaccountButton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/goback"
+                    android:layout_gravity="bottom|left"
+                    android:src="@drawable/back_30"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/membreName"
+                    android:paddingTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom"
+                    android:textColor="#ffffff"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:text=" est ajouté à vos contacts."
+                    android:textColor="#ffffff"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+</LinearLayout>
+
+

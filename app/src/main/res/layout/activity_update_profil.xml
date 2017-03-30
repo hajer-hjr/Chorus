@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    style="@style/SJB_CustomLayout">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:layout_gravity="center"
+            android:id="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:fillViewport="false">
+
+
+        <LinearLayout
+
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/email_login_form"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/username"
+                    style="@style/SJB_EditText"
+                    android:hint="@string/prompt_username"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/firstname"
+                    style="@style/SJB_EditText"
+                    android:hint="@string/prompt_firstanme"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/lastname"
+                    style="@style/SJB_EditText"
+                    android:hint="@string/prompt_lastname"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/email"
+                    android:drawableLeft="@drawable/message_icon"
+                    style="@style/SJB_EditText"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+           <!-- <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/tel"
+                    style="@style/SJB_EditText"
+                    android:hint="@string/prompt_tel"
+                    android:inputType="phone"
+                    android:digits="0123456789+"
+                    android:backgroundTint="#ffffff" />
+            </android.support.design.widget.TextInputLayout>-->
+
+            <TextView
+                style="@style/SJB_Title_Item_1"
+                android:text="@string/prompt_pays"
+                android:padding="3dip"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <android.support.v7.widget.AppCompatSpinner
+                style="@style/SJB_Spinner"
+                android:id="@+id/pays"
+                android:prompt="@string/country_prompt"
+                android:popupBackground="#319b87"
+                android:spinnerMode="dialog">
+
+            </android.support.v7.widget.AppCompatSpinner>
+            <TextView
+                style="@style/SJB_Title_Item_1"
+                android:text="@string/prompt_date_naissance"
+                android:padding="3dip"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+                <EditText
+                    style="@style/SJB_EditText"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:drawableLeft="@drawable/icon_agenda"
+                    android:onClick="setDate"
+                    android:clickable="true"
+                    android:id="@+id/date"
+                    android:backgroundTint="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+         <!--   <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/taille"
+                    style="@style/SJB_EditText"
+                    android:backgroundTint="#ffffff"
+                    android:hint="@string/prompt_taille"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>-->
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/paroisse"
+                    style="@style/SJB_EditText"
+                    android:hint="@string/prompt_profession"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/verset"
+                    style="@style/SJB_EditText"
+                    android:hint="@string/prompt_verset"
+                    android:inputType="text"
+                    android:backgroundTint="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/update_profil_button"
+                android:textAllCaps="false"
+                style="@style/SJB_SubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Enregistrer"
+                android:onClick="saveUser"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

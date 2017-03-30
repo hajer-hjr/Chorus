@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/SJB_CustomLayout1"
+    android:padding="0dp">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#319b87"
+            android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+  <!--  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#3f2d41"
+        android:padding="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultsCount"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:shadowColor="#000000"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textStyle="bold"/>
+</LinearLayout>
+-->
+     <!--   <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/button_save_alert"
+            android:id="@+id/saveAlertButton"
+            android:onClick="goToSaveAlertPage"
+            android:background="@drawable/custom_button_grey"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"/>-->
+<!--    </RelativeLayout>
+-->
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="3px"
+    android:background="@drawable/horizontal_shadow" >
+</View>
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/SJB_ListView"
+        android:id="@+id/listingsList"
+        android:divider="@drawable/divider"
+        android:dividerHeight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+</LinearLayout>

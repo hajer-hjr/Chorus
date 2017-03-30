@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#319b87"
+    tools:context="chorus.chorus.com.chorus.LoginActivity">
+
+
+<ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/div1"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/bckgrndImageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        android:src="@drawable/backgroun1" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo"
+        android:id="@+id/imageView2" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/email_login_form"
+            android:paddingTop="-40dp"
+            android:layout_below="@+id/bckgrndImageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:textColorHighlight="#ffffff"
+                android:textColorLink="#ffffff"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/email"
+
+                    android:drawableLeft="@drawable/message_icon"
+                    style="@style/SJB_EditText"
+                    android:hint="@string/prompt_email_tel"
+                    android:inputType="text"
+                    android:backgroundTint="#ffffff" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/SJB_EditText"
+                    android:drawableLeft="@drawable/pwd_icon"
+                    android:backgroundTint="#ffffff"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/selector_checkbox"
+                    android:id="@+id/rememberMe" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Se souvenir de moi"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:textAllCaps="false"
+                style="@style/SJB_SubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/action_sign_in"
+                android:onClick="login"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>

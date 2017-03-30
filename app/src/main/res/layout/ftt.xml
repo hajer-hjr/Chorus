@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".MyAccountActivity">
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout android:layout_height="0dp"
+                android:layout_weight="5"
+                android:id="@+id/lay1"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="#AAA"
+                    />
+                <LinearLayout android:layout_height="wrap_content"
+                    android:id="@+id/sexeLayout"
+                    android:layout_width="match_parent"
+                    android:background="#d6276a"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignBottom="@+id/logo"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff" />
+                        <TextView
+                            android:id="@+id/paroisse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/username"
+                            android:padding="5dip"
+                            android:layout_alignParentRight="true"
+                            android:textSize="18dp"
+                            android:textColor="#ffffff" />
+                    </RelativeLayout>
+                    <!--   <TextView
+                           android:id="@+id/age"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:padding="5dip"
+                           android:layout_alignBottom="@+id/myImageViewText"
+                           android:textSize="18dp"
+                           android:textColor="#ffffff" />-->
+                </LinearLayout>
+            </RelativeLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_below="@id/lay1"
+                android:layout_weight="2"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp">
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                style="@style/SJB_myaccountButton"
+                                android:src="@drawable/agenda"
+                                android:clickable="true"
+                                android:id="@+id/agendaButt"
+                                android:layout_marginBottom="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+                            <TextView
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignBottom="@+id/agendaButt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:text="Agenda"
+                                android:textSize="14dp"
+                                android:textColor="#636363" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                style="@style/SJB_myaccountButton"
+                                android:src="@drawable/discus"
+                                android:clickable="false"
+                                android:id="@+id/discusButt"
+                                android:layout_marginBottom="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+                            <TextView
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignBottom="@+id/discusButt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:text="Discus."
+                                android:textSize="14dp"
+                                android:textColor="#636363" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                style="@style/SJB_myaccountButton"
+                                android:src="@drawable/contact_gris"
+                                android:clickable="false"
+                                android:id="@+id/contactButt"
+                                android:layout_marginBottom="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+                            <TextView
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignBottom="@+id/contactButt"
+                                android:layout_width="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:text="Contacts"
+                                android:textSize="14dp"
+                                android:textColor="#636363" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                style="@style/SJB_myaccountButton"
+                                android:src="@drawable/mybook_gris"
+                                android:clickable="false"
+                                android:id="@+id/bookButt"
+                                android:layout_marginBottom="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+                            <TextView
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignBottom="@+id/bookButt"
+                                android:layout_width="wrap_content"
+                                android:layout_centerHorizontal="true"
+
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:text="My Book"
+                                android:textSize="14dp"
+                                android:textColor="#636363" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                style="@style/SJB_myaccountButton"
+                                android:src="@drawable/map_gris"
+                                android:clickable="true"
+                                android:id="@+id/geoButt"
+                                android:layout_marginBottom="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:onClick="geo_search"/>
+
+                            <TextView
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignBottom="@+id/geoButt"
+
+                                android:layout_width="wrap_content"
+                                android:layout_centerHorizontal="true"
+
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:text="Géo."
+                                android:textSize="14dp"
+                                android:textColor="#636363" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

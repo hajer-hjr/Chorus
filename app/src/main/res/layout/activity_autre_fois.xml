@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:orientation="vertical"
+    style="@style/SJB_CustomLayout"
+    android:background="#ffffff">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#319b87"
+            android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <chorus.chorus.com.chorus.CircularImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/imageUser"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/chorusText"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        android:text="une autre fois"
+        android:textColor="#f10714"
+        android:fontFamily="casual" />
+    <chorus.chorus.com.chorus.CircularImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageMembre"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:paddingBottom="15dp"
+        />
+    <ImageButton
+        android:paddingTop="10dp"
+        android:clickable="true"
+        style="@style/SJB_myaccountButton"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/goback"
+        android:layout_gravity="bottom|left"
+        android:src="@drawable/back_30_rose"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

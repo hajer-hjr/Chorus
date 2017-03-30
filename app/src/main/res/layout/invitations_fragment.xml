@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/SJB_CustomLayout1"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="#ffffff">
+    <!--
+        <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#319b87"
+            android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>-->
+
+   <!-- <View
+        android:layout_width="fill_parent"
+        android:layout_height="3px"
+        android:background="#e5e5e5" >
+    </View>
+-->
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/SJB_ListView"
+
+        android:id="@+id/listingsList"
+        android:divider="#e5e5e5"
+        android:dividerHeight="1dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+</LinearLayout>

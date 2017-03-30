@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chorus</string>
+    <!--<string name="api_base_url">http://192.168.1.3/chorus</string>-->
+    <string name="api_base_url">http://192.168.1.16/chorus</string>-->
+        <string name="auth_via">username</string>
+        <!--<string name="google_maps_key">some_google_maps_key</string>-->
+</resources>
+
